@@ -1,0 +1,7 @@
+[2025-08-22 11:39:32] INFO  Log - Launching Chrome browser
+[2025-08-22 11:39:36] INFO  Log - Navigating to Amazon
+[2025-08-22 11:39:37] INFO  Log - Clicking on Sign in button
+[2025-08-22 11:39:38] INFO  Log - Entering email/phone
+[2025-08-22 11:39:41] DEBUG Log - Entering password
+[2025-08-22 11:39:41] DEBUG Log - Login attempted successfully
+[2025-08-22 11:39:41] INFO  Log - Closing browser

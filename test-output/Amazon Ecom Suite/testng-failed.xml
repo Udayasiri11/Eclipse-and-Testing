@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Amazon Ecom Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Grouped Tests(failed)">
+    <groups>
+      <run>
+        <include name="Critical"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="MavenDay3.Groupofgroups">
+        <methods>
+          <include name="testAmazonSearchAndAddToCart"/>
+          <include name="testAmazonLogin"/>
+        </methods>
+      </class> <!-- MavenDay3.Groupofgroups -->
+    </classes>
+  </test> <!-- Grouped Tests(failed) -->
+</suite> <!-- Failed suite [Amazon Ecom Suite] -->

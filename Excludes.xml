@@ -1,0 +1,19 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Exclude Group Suite">
+
+    <test name="Exclude Mac Tests">
+        <groups>
+            <run>
+                <include name="windows"/>
+                <include name="linux"/>
+                <exclude name="Mac1"/>
+                <exclude name="Mac2"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="MavenDay3.Exclude"/>
+        </classes>
+    </test>
+
+</suite> 
+

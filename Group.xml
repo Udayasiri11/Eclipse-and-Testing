@@ -1,0 +1,35 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="GroupSuite">
+  <groups>
+    <define name="checkintest">
+      <include name="windows"/>
+    </define>
+
+    <define name="functest">
+      <include name="windows"/>
+      <include name="linux"/>
+    </define>
+      <define name="funtest">
+      <include name="windows"/>
+      <include name="linux"/>
+      <include name="Mac"/>
+    </define>
+
+    <define name="all">
+      <include name="checkintest"/>
+      <include name="functest"/>
+      <include name="funtest"/>
+    </define>
+  </groups>
+
+  <test name="Run MetaGroup 'all'">
+    <groups>
+      <run>
+        <include name="all"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="Day28.Groups"/>
+    </classes>
+  </test>
+</suite>
