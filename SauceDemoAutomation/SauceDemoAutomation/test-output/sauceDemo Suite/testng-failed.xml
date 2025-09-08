@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [sauceDemo Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Smoke Tests(failed)">
+    <groups>
+      <run>
+        <include name="smoke"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="com.saucedemo.stepdefinitions.LoginSteps">
+        <methods>
+          <include name="inventory_page_should_be_displayed"/>
+          <include name="login_page_title_should_be"/>
+        </methods>
+      </class> <!-- com.saucedemo.stepdefinitions.LoginSteps -->
+    </classes>
+  </test> <!-- Smoke Tests(failed) -->
+  <test thread-count="5" name="Regression Tests(failed)">
+    <groups>
+      <run>
+        <include name="regression"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="com.saucedemo.stepdefinitions.LoginSteps">
+        <methods>
+          <include name="error_message_should_be_shown"/>
+          <include name="logo_should_be_displayed"/>
+          <include name="user_enters_and"/>
+        </methods>
+      </class> <!-- com.saucedemo.stepdefinitions.LoginSteps -->
+    </classes>
+  </test> <!-- Regression Tests(failed) -->
+</suite> <!-- Failed suite [sauceDemo Suite] -->
